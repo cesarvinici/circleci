@@ -5,6 +5,7 @@ jobs:
       # specify the version you desire here
       - image: circleci/node
     steps:
+      - checkout # checkout the repository from github
       - run: npm install
       # run tests!
       - run: npm test
